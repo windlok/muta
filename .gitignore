@@ -61,5 +61,6 @@ app.*.map.json
 # VS Code personal settings
 .vscode/
 
-# Price-check scraper worker lives in its own repository
-/scraper-worker/
+# Price-check scraper worker
+# Keep the source and lockfile versioned; the worker's own .gitignore excludes
+# node_modules, local logs, and local environment files.
