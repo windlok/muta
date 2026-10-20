@@ -1,0 +1,22 @@
+flutter_launcher_icons:
+  android: true
+  ios: true
+
+  # Kaynak ikon (1024x1024, tam kare, düz arka plan).
+  image_path: "assets/icon/icon.png"
+
+  # Android adaptive icon (yuvarlak/kare maskelerde düzgün görünür).
+  adaptive_icon_background: "#101125"
+  adaptive_icon_foreground: "assets/icon/icon.png"
+  adaptive_icon_monochrome: "assets/icon/icon.png"
+
+  min_sdk_android: 23
+
+  # iOS App Store alpha kanalı kabul etmez.
+  remove_alpha_ios: true
+
+  web:
+    generate: true
+    image_path: "assets/icon/icon.png"
+    background_color: "#101125"
+    theme_color: "#6C5CE7"

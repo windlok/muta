@@ -1,0 +1,19 @@
+# Supabase Edge Function yapılandırması.
+# `supabase login` yaptıktan sonra: supabase link -> supabase functions deploy
+
+project_id = "your-project-ref"
+
+# AI proxy'si: yalnızca giriş yapmış kullanıcılar çağırabilir (JWT doğrulanır).
+[functions.ai]
+verify_jwt = true
+
+# Fiyat çekme: istemciden çağrılır.
+[functions.scrape-price]
+verify_jwt = false
+
+[functions.search-products]
+verify_jwt = true
+
+# Cron tarafından çağrılır (pg_cron + pg_net).
+[functions.check-prices]
+verify_jwt = false
